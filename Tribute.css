@@ -1,0 +1,212 @@
+.col-4 {
+    width: 33.33%; 
+}
+
+.col-6 {
+    width: 50%;
+}
+
+body {
+    background-image: url(white-wooden-textures.jpg);
+    background-size: contain;
+    margin: 0px;
+    font-family: 'Handlee', cursive;
+}
+
+h1 {
+    color: teal;
+}
+
+header {
+    background-image: url(https://media.gettyimages.com/photos/florence-welch-of-the-band-florence-the-machine-performs-onstage-at-picture-id1052785476?k=6&m=1052785476&s=612x612&w=0&h=111_Kq85AxmkQTKy8k0v4aU0rxK5ekVrE2kKzblSqgY=);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    font-size: 400%;
+    text-transform: uppercase;
+    color: white;
+}
+
+header p {
+    margin: 0;
+    padding-top: 128px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/*NavBar*/
+nav {
+    background-color: gray;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 17px;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: gray;
+}
+
+nav ul li a:active {
+    background-color: darkslategray;
+    color: white;
+}
+
+nav ul li.dropdownIcon {
+    float: right;
+    display: none;
+    
+}
+/*Band Pic and About*/
+section.About {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.About h1 {
+    margin-top: 19px;
+    margin-bottom: 7px;
+}
+
+section.About p {
+    margin: 0px;
+}
+
+section article.Bandpic {
+    text-align: center;
+}
+
+section article.Bandpic img {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*Members*/
+section.members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.Members {
+    color: white;
+    background: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-align: center;
+}
+
+article.col-4 img {
+    width: 70%;
+    height: 70%;
+    max-width: 90%;
+    max-height: 90%;
+    padding-top: 7px;
+}
+
+/*Discography*/
+section.Discography {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+section.Discography img {
+    border-radius: 7px;
+}
+
+/*Video*/
+section iframe {
+    display: block;
+}
+
+/*Footer*/
+footer p {
+    text-align: center;
+}
+
+/*Mobile Styles*/
+
+@media screen and (max-width:680px) {
+    
+    nav ul li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    nav ul li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    nav ul.navbar.responsive li {
+        display: block;
+        float: none;
+    }
+    
+    nav ul.navbar.responsive li a {
+        display: block;
+    }
+    
+    nav ul.navbar.responsive li.dropdownIcon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    article.col-4 img {
+        height: 60%;
+    }
+}
+    
+/*Gallery Styles*/
+
+h1 {
+    text-align: center;
+}
+
+section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+section.gallery h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+section.gallery article img {
+    margin: 8px;
+}
+
+/*Biography Styles*/
+
+section.Biography article p {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
