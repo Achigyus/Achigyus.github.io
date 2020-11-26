@@ -9,7 +9,11 @@ body {
     line-height: 2px;
     overflow-x: hidden;
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+    min-height: 100vh;
+    width: ;
+    margin: 0;
 }
 
 .container {
@@ -17,17 +21,23 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;   
-   height: 500px;
+   /* height: 500px; */
+   height: 100%;
+   padding: 1rem;
+   position: relative;
+   min-height: 100vh;
    overflow: hidden;
 }
 
 .card {
-    width: 25%;
+    /* width: 25%; */
     background-color: white;
-    align-items: center;
+    /* align-items: center; */
+    max-width: 800px;
+    min-width: 25%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
@@ -71,12 +81,17 @@ span {
     background-color: white;
     display: flex;
     flex-flow: row wrap;
-    border-top: 1px solid hsl(227, 10%, 46%);
+    justify-content: center;
+    border-top: 1px solid hsl(0, 0%, 59%);
 }
 
 .follow, .likes, .photos {
     text-align: center;
     padding: 15px 20px;
+}
+
+.attribution {
+    margin-bottom: 3rem;
 }
 
 @media screen and  (max-width:375px) {
