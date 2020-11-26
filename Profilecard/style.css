@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.125rem;
+    background-color: hsl(185, 75%, 39%);
+    line-height: 2px;
+}
+
+.container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   height: 500px;
+}
+
+.card {
+    width: 25%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-top {
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    padding-top: 76px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.profile {
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.top-text {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+span {
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+}
+
+.bottom-text {
+    font-size: .75rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.card-bottom {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 1px solid hsl(227, 10%, 46%);
+}
+
+.follow, .likes, .photos {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-70%, -70%);
+    z-index: -1;
+
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media screen and  (max-width:375px) {
+    .card {
+        width: 95%;
+        min-width: auto;
+    }
+}
