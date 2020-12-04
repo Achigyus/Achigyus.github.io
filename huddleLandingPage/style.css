@@ -83,7 +83,8 @@ header img {
     width: 100%;
 }
 
-.fans button {
+.fans a {
+    display: block;
     width: 30%;
     padding: 1em 1em;
     border-radius: 1.875em;
@@ -92,20 +93,34 @@ header img {
     color: hsl(257, 40%, 49%);
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     margin-top: 1.5em;
+    background-color: white;
+    text-align: center;
 }
 
-button a {
-    text-decoration: none;
-    color: hsl(257, 40%, 49%);
+.fans a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
 }
 
 .icons {
     width: 100%;
     grid-row: 12 / 13;
-    grid-column: 11 / 12;
+    grid-column: 11 / 13;
     /* grid-area: i;
     margin-top: 9.375rem; */
 }
+
+.icons i {
+    border: 1px solid white;
+    color: white;
+    margin-right: 5px;
+}
+
+.icons i:hover {
+    border-color:  hsl(300, 69%, 71%);
+    color:  hsl(300, 69%, 71%);
+}
+
 
 
 footer {
@@ -140,20 +155,19 @@ footer {
     }
 
     .mockups {
-        grid-column: 2 / 12;
-        grid-row: 3 / 6;
-        margin: 0;
-        margin-bottom: 20px;
+        grid-column: 3 / 12;
+        grid-row: 2 / 5;
+        margin-top: 30px;
     }
     
     .fans{
         grid-column: 2 / 12;
-        grid-row: 8 / 10;
+        grid-row: 7 / 9;
         margin: 0;
         text-align: center;
     }
 
-    .fans button {
+    .fans a {
         width: 70%;
         text-align: center;
         padding: 1em 1em;
@@ -175,13 +189,14 @@ footer {
     }
 
     .icons {
-        grid-column: 6 / 8;
-        grid-row: 13 / 14;
+        grid-column: 5 / 10;
+        grid-row: 12 / 13;
 
     }
     
     footer {
         grid-column: 2 / 12;
-        grid-row: 14 / 15;
+        grid-row: 12 / 13;
+        margin-top: 40px;
     }
 }
